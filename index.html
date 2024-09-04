@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <title>Lewis Cockram's Portfolio</title>
+</head>
+<body>
+<main>
+<header>
+    <nav class="topnav" id="portfolioTopnav">
+        <a href="#aboutsection">About</a>
+        <a href="#skillssection">Skills</a>
+        <a href="#accomplishmentssection">Accomplishments</a>
+        <a href="#contactsection">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="openMenu()"><i class="fa fa-bars"></i></a>
+    </nav>
+    <h1>Lewis Cockram</h1>
+</header>
+<!-- About Section -->
+<div id="aboutsection">
+    <a href="https://www.linkedin.com/in/lewis-cockram-520220241/" target="_blank">
+        <figure>
+            <img src="lewis headshot.jpg" width="250" height="300" alt="Lewis sitting at table"/>
+        </a>
+        <figcaption> Flinders University Graduation 2022</figcaption>
+    </figure>
+    <h2 id="about" class="heading uppercase">About</h2>
+    <p>I am a first-year PhD Student at <em>CARRS-Q</em> studying <strong>human factors</strong> of highly automated driving.</p>
+</div>
+<!-- Skills Section -->
+<div id="skillssection">
+    <h3 id="Skills">Skills</h3>
+    <h4>Research Skills</h4>
+    <ul class="list">
+        <li>Report and grant writing</li>
+        <li>Quantitative data analysis and processing: psychophysiological signals</li>
+        <li>Statistics</li>
+    </ul>
+    <h4>Interpersonal Skills</h4>
+    <ul class="list">
+        <li>Industry Collaboration</li>
+        <li>Multi-disciplinary research</li>
+        <li>Leadership</li>
+    </ul>
+    <h4>Technical Skills</h4>
+    <ul class="list">
+        <li>End to end ECG and EDA data collection, cleaning and analysis</li>
+        <li>Inferential Statistics using Python, R and SPSS</li>
+    </ul>
+</div>
+<!-- Accomplishments Section -->
+<div id="accomplishmentssection">
+    <h2>Accomplishments</h2>
+    <table>
+        <tr>
+            <th scope="col">Publications</th>
+            <th scope="col">Awards</th>
+            <th scope="col">Presentations</th>
+        </tr>
+        <tr>
+            <th>Your Content</th>
+            <td>Your Content</td>
+            <td>Your Content</td>
+        </tr>
+    </table>
+</div>
+<!-- Contact Section -->
+<div id="contactsection">
+    <h2 class="contactform">Contact</h2>
+    <a href="https://www.linkedin.com/in/lewis-cockram-520220241/" target="_blank">Here is my LinkedIn page.</a>
+    <form>
+        <br>
+        <label for="name">*Please enter your name:</label>
+        <br>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <br>
+        <label for="email">*Please enter your email:</label>
+        <br>
+        <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <br>
+        <br>
+        <label for="mobile">Mobile (optional):</label>
+        <br>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10,16}">
+        <br>
+        <br>
+        <label for="message">*Please leave your message below</label>
+        <br>
+        <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+        <br>
+        <br>
+        <input type="submit">
+    </form>
+</div>
+<script>
+function openMenu() {
+    var x = document.getElementById("portfolioTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</main>
+<script src="./nav.js"></script>
+</body>
+</html>

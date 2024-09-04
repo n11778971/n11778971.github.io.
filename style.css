@@ -1,0 +1,114 @@
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+
+body{
+    padding: 10px; background-color: #ddd8d5;
+}
+
+
+.list li {
+    color: rgb(0, 0, 0);
+}
+
+h2, h3{
+    text-transform: uppercase;
+}
+
+body{
+    font-family: Arial;
+}
+
+#contactsection{
+    height: 50px;
+    width 300px
+}
+
+table, th, td{
+    border: 2px solid black; border-collapse: collapse; padding: 10px;
+}
+
+figure {
+  margin: 0 auto; /* Center the figure */
+  text-align: center; /* Center the caption under the image */
+  width: fit-content; /* Shrink the figure to fit its content */
+}
+
+img {
+  border-radius: 100%;
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+}
+
+figcaption {
+  margin-top: 10px; /* Add some space between the image and caption */
+  font-size: 14px; /* Adjust font size if needed */
+  color: #333; /* Set caption text color */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contactsection{
+    font-family: Arial;
+}
+
+
+.topnav .icon {
+
+    display: none;
+  
+  }
+  
+  /* When the screen is less than 600 pixels wide, hide all links. Show the icon that should open and close the nav (.icon) */
+  
+  @media only screen and (max-width: 600px) {
+  
+    .topnav a {display: none;}
+  
+    .topnav a.icon {
+  
+      float: right;
+  
+      display: block;
+  
+    }
+  
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the use clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  
+  @media only screen and (max-width: 600px) {
+  
+    .topnav.responsive {
+  
+      position: fixed;
+  
+  }
+  
+    .topnav.responsive a.icon {
+  
+      position: absolute;
+  
+      right: 0;
+  
+      top: 0;
+  
+    }
+  
+    .topnav.responsive a {
+  
+      float: none;
+  
+      display: block;
+  
+      text-align: left;
+  
+    }
+  
+  }
